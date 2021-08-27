@@ -298,7 +298,7 @@ public class UCT implements Search {
 	}
 	
 	private double getScore(Pair<Double,Double> evalResult) {
-		return 1000.0 * evalResult.m_a + evalResult.m_a; 
+		return 1000.0 * evalResult.m_a + evalResult.m_b; 
 	}
 	
 	private double simulateRandom(GameState gs, int max_cicle, Node program) throws Exception {
